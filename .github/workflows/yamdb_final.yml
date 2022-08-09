@@ -71,4 +71,5 @@ jobs:
             sudo docker pull osenev/web
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 80:80 osenev/web
+            # sudo docker run --rm -d -p 80:80 osenev/web
+            sudo cd ./infra && sudo docker-compose up
