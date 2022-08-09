@@ -70,6 +70,8 @@ jobs:
             # Выполняет pull образа с DockerHub
             sudo docker pull osenev/web
             #остановка всех контейнеров
-            sudo docker stop $(sudo docker ps -a -q)
+#            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker-compose stop
+            sudo docker-compose rm web
             # sudo docker run --rm -d -p 80:80 osenev/web
-            sudo docker-compose up
+            sudo docker-compose up -d
