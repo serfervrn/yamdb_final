@@ -9,19 +9,18 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
+
 from .filters import TitlesFilter
 from .mixins import ListCreateDestroyViewSet
-from .permissions import (IsAdmin, IsAdminOrReadOnly,
-                          IsAdminModeratorOwnerOrReadOnly)
+from .permissions import (IsAdmin, IsAdminModeratorOwnerOrReadOnly,
+                          IsAdminOrReadOnly)
 from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ReadOnlyTitleSerializer,
-                          RegistrationSerializer, ReviewSerializer,
-                          TitleSerializer, UserEditSerializer,
-                          UserSerializer, GettingTokenSerializer,
-                          )
+                          GenreSerializer, GettingTokenSerializer,
+                          ReadOnlyTitleSerializer, RegistrationSerializer,
+                          ReviewSerializer, TitleSerializer,
+                          UserEditSerializer, UserSerializer)
 
 
 class CategoryViewSet(ListCreateDestroyViewSet):
