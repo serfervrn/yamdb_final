@@ -1,3 +1,5 @@
+![Yamdb_workflow](https://github.com/serfervrn/yamdb_final/yamdb_workflow.yml/badge.svg)
+
 # Api **YaMDb**
 
 Реализация Rest API для проекта  **YaMDb**
@@ -22,4 +24,3 @@
 ## Об авторе
 Sergey Osenev : serfervrn@yandex.ru
 
-[![Actions Status](https://github.com/serfervrn/yamdb_final/actions/Django-app%20workflow/badge.svg)](https://github.com/serfervrn/yamdb_final/actions)
