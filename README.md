@@ -1,4 +1,4 @@
-![Yamdb_workflow](https://github.com/serfervrn/yamdb_final/yamdb_workflow.yml/badge.svg)
+![Yamdb_workflow](https://github.com/serfervrn/yamdb_final/workflows/yamdb_workflow.yml/badge.svg)
 
 # Api **YaMDb**
 
