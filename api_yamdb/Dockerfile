@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.7.13-alpine
 LABEL author='serfervrn@yandex.ru' version=0.1
 WORKDIR /app
 COPY . .
