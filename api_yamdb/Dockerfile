@@ -1,6 +1,6 @@
-FROM python:3.7-slim
-LABEL author='serfervrn@yandex.ru' version=0.1
+FROM python:3
 WORKDIR /app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-RUN pip3 install -r /app/requirements.txt --no-cache-dir
-CMD ["bash", "/app/docker-entrypoint.sh"]
+
