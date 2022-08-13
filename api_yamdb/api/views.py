@@ -124,7 +124,7 @@ class RegistrationAPIView(APIView):
             send_mail(
                 'Код активации',
                 f'Password для {user.username}: {confirmation_code}',
-                'host@gmail.com',
+                'host@mail.com',
                 [user.email],
                 fail_silently=False
             )
