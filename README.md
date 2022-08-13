@@ -21,3 +21,5 @@
 
 ## Об авторе
 Sergey Osenev : serfervrn@yandex.ru
+
+![example workflow](https://github.com/serfervrn/yamdb_final/tree/master/github/workflows/yamdb_final.yml/badge.svg)
