@@ -14,11 +14,8 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: | 
-        # обновление pip
         python -m pip install --upgrade pip 
-        # установка flake8 и его плагинов
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
-        # установка зависимостей
         pip install -r ./api_yamdb/requirements.txt
     - name: Test with flake8 and django tests
       run: |
@@ -64,6 +61,7 @@ jobs:
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
+            echo SECRET_KEY=${{ secrets.SECRET_KEY }} > .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
             echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env
