@@ -22,4 +22,4 @@
 ## Об авторе
 Sergey Osenev : serfervrn@yandex.ru
 
-![example workflow](https://github.com/serfervrn/yamdb_final/tree/master/github/workflows/yamdb_final.yml/badge.svg)
+[![Actions Status](https://github.com/serfervrn/yamdb_final/actions/Django-app%20workflow/badge.svg)](https://github.com/serfervrn/yamdb_final/actions)
