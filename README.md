@@ -1,6 +1,7 @@
 ![Yamdb_workflow](https://github.com/serfervrn/yamdb_final/workflows/yamdb_workflow.yml/badge.svg)
 
 # Api **YaMDb**
+http://158.160.6.30
 
 Реализация Rest API для проекта  **YaMDb**
 
